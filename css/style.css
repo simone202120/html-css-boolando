@@ -3,3 +3,55 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+header{
+    height: 70px;
+    background-color: rgb(255, 128, 0);
+    
+}
+
+.container-testa{
+    display: flex;
+    width: 70%;
+    height: 100%;
+    justify-content: space-between;
+    margin: auto;
+    color: white;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.flex a,i{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+
+.logo{
+    text-align: center;
+}
+
+.logo img{
+    height: 40%;
+}
+
+.shop{
+    max-width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.prodotti img{
+    width: 100%;
+    height: 100%;
+}
+
+.prodotti{
+    width: calc(100% / 3);
+}
+
