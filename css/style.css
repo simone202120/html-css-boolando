@@ -6,7 +6,11 @@
 
 header{
     height: 70px;
+    width: 100%;
     background-color: rgb(255, 128, 0);
+    position: fixed;
+    top: 0px;
+    z-index: 999;
     
 }
 
@@ -24,10 +28,10 @@ header{
     align-items: center;
 }
 
-.flex a,i{
+a,i{
     text-decoration: none;
     color: white;
-    padding: 5px;
+    margin-right: 5px;
 }
 
 .logo{
@@ -41,9 +45,11 @@ header{
 .shop{
     max-width: 70%;
     display: flex;
-    flex-wrap: wrap;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 130px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
 }
 
 .prodotti img{
@@ -51,7 +57,129 @@ header{
     height: 100%;
 }
 
-.prodotti{
-    width: calc(100% / 3);
+.immagine-hoover{
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
 }
 
+.percentuale{
+    background-color: red;
+    height: 20px;
+    width: 40px;
+    position: absolute;
+    left: 0;
+    bottom: 40px;
+    color: white;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+}
+
+.sostenibilità{
+    background-color: green;
+    color: white;
+    height: 20px;
+    width: 90px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 20px;
+    position: absolute;
+    bottom: 40px;
+    left: 43px;
+}
+
+#lastsostenibiltà{
+    position: absolute;
+    left: 0px;
+}
+
+.cuore{
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    position: absolute;
+    right: 0px;
+    top: 10px;
+    color: black;
+    text-align: center;
+    line-height:30px;
+}
+
+.prodotti{
+    height: 90%;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.container-prodotti{
+    width: calc(95% / 3);
+    height: 450px;
+    margin-bottom: 40px;
+}
+
+.marca{
+    color: gray;
+    font-size: 13px;
+}
+
+.modello{
+    font-weight: bold;
+}
+
+.prezzo{
+    color: red;
+}
+
+.prezzopartenza{
+    text-decoration: line-through;
+    color: black;
+    font-size: 13px;
+}
+
+.boxfooter{
+    background-color: #323232;
+    height: 50px;
+}
+
+.azienda{
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.info-azienda a{
+    font-size: 10px;
+}
+
+.info-social{
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.info-social p{
+    margin-bottom: 10px;
+}
+
+.foot-info{
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+}
+
+.prodotti:hover .immagine-princile{
+    display: none;
+}
+
+.prodotti:hover .immagine-hoover{
+    display: inline-block;
+}
+
+.prodotti:hover .cuore{
+    color: red;
+}
